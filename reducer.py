@@ -3,7 +3,7 @@ import sys
 data = {}
 
 for line in sys.stdin:
-    (group, number) = line.strip()
+    (group, number) = line.split(",")
 
     if group in data.keys():
         data[group] = max(data[group], number)
