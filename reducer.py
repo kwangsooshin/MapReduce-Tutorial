@@ -2,8 +2,8 @@ import sys
 
 data = {}
 
-for line in sys.stdin:
-    group, number = line.split(",")
+for index, line in enumerate(sys.stdin):
+    group, number = line.strip().split(",")
 
     if group in data.keys():
         data[group] = max(data[group], number)
