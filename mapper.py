@@ -1,5 +1,6 @@
 import sys
 
-for line in sys.stdin:
-    group, number = line.split(',')
-    print("{},{}".format(group, number))
+for index, line in enumerate(sys.stdin):
+    if index != 0:
+        group, number = line.split(',')
+        print("{},{}".format(group, number))
