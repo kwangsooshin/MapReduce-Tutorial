@@ -14,5 +14,6 @@ with open("input.data", "w") as f:
         number = random.random() * 10000 * random.random()
         f.write("{},{}\n".format(group, number))
 
-        if i % 1000 == 0:
+        if i % 10000 == 0:
             print(i)
+print("Done!")

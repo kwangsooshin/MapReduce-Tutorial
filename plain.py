@@ -18,4 +18,3 @@ for index, line in enumerate(sys.stdin):
 
 for i in range(number_of_group):
     print("{},{}".format(i, counter[i]))
-
