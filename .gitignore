@@ -2,8 +2,8 @@
 ### Example user template template
 ### Example user template
 
-*.data
-*.txt
+**/*.data
+**/*.txt
 
 # IntelliJ project files
 .idea
@@ -220,3 +220,4 @@ dmypy.json
 .pyre/
 
 !/wordcount/davinci.txt
+/wordcount/davinci.txt
