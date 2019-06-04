@@ -3,7 +3,7 @@ import sys
 data = {}
 
 for index, line in enumerate(sys.stdin):
-    group, number = line.strip().split(",")
+    group, number = line.strip().split("\t")
     number = float(number)
 
     if group in data.keys():
@@ -12,4 +12,4 @@ for index, line in enumerate(sys.stdin):
         data[group] = number
 
 for group, number in data.items():
-    print("{},{}".format(group, number))
+    print("%s\t%s" % (group, number))
