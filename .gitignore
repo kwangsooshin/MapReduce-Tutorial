@@ -3,6 +3,7 @@
 ### Example user template
 
 *.data
+*.txt
 
 # IntelliJ project files
 .idea
@@ -218,3 +219,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+!/wordcount/davinci.txt
